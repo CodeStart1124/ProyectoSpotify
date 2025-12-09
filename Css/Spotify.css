@@ -1,164 +1,251 @@
 body {
-    background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.container{
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.img{
-    width: 49px;
-    height: 35px;
-    display: flex;
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 20px; */
 }
 
-.icono-inicio{
-    border: 10px solid #222;
-    background-color: #222;
-    border-radius: 50%;
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
+.img {
+  width: 49px;
+  height: 35px;
+  display: flex;
 }
 
-.search{
-    background-color: #222;
-    border-radius: 30px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    width: 400px;
-    color: white;
+.icono-inicio {
+  width: 1.7rem;
+  border: 10px solid #222;
+  background-color: #222;
+  border-radius: 50%;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.parte-izquierda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inicio-busqueda {
+  display: flex;
+}
+
+.search {
+  background-color: #222;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  color: white;
 }
 
 .search input {
-    flex: 1;
-    background: transparent;
-    border: none;
-    font-size: 16px;
-    color: white;
-    padding: 5px 10px;
-    outline: none;
+  flex: 1;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 5px 10px;
+  outline: none;
 }
 
-.icono-derecha{
-    width: 100%;
+.icono-derecha {
+  width: 100%;
 }
 
-.notification{
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-    right: 100px;
+.notification {
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  right: 100px;
 }
 
-.family{
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-    right: 100%;
+.family {
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  right: 100%;
 }
 
-.perfil{
-    display: flex;
-    border: 10px solid #222;
-    background-color: #222;
-    border-radius: 50%;
+.perfil {
+  display: flex;
+  border: 10px solid #222;
+  background-color: #222;
+  border-radius: 50%;
 }
 
-.img-redonda{
-    width: 35px;
-    height: 35px;
-    bottom: 50%;
-    border-radius: 50%;
-    cursor: pointer;
-    object-fit: cover;
+.img-redonda {
+  width: 35px;
+  height: 35px;
+  bottom: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
 }
 
-.biblioteca{
-    color: white;
-    flex-wrap: wrap;
-    font-size: 17px;
-    border: 1px solid #181818;
-    background-color: #181818;
-    border-radius: 7px;
-    width: 350px;
-    height: 690px;
+.biblioteca {
+  color: white;
+  flex-wrap: wrap;
+  font-size: 17px;
+  border: 1px solid #181818;
+  background-color: #181818;
+  border-radius: 7px;
+  width: 350px;
+  height: 690px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
 }
 
-.superior{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-}
-.titulo{
-    padding-left: 15px;
+.superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
 }
 
-.crear-biblioteca{
-    background-color: #000;
-    color: white;
-    height: 15px;
-    border-radius: 30px;
-    padding: 10px 20px;
-    font-family: sans-serif;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    transition: background 0.3s;
+.titulo {
+  padding-left: 15px;
+}
+
+.titulo p,
+.listas p,
+.recientes span {
+  margin: 5px 0;
+  padding: 0;
+}
+
+.crear-biblioteca {
+  background-color: #000;
+  color: white;
+  height: 15px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .crear-biblioteca:hover {
-    background-color: #111;
+  background-color: #111;
 }
 
-.icono{
-    font-size: 15px;
-    font-weight: bold;
+.icono {
+  font-size: 15px;
+  font-weight: bold;
 }
 
-blockquote{
-    display: flex;
-    gap: 20px;
-    font-size: 15px;
+.listas div {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
 }
 
-.lista{
-    border: 10px solid #222;
-    border-radius: 17px;
-    background: #222;
+.lista {
+  border: 10px solid #222;
+  border-radius: 17px;
+  background: #222;
 }
 
-.artistas{
-    border: 10px solid #222;
-    border-radius: 17px;
-    background: #222;
+.artistas {
+  border: 10px solid #222;
+  border-radius: 17px;
+  background: #222;
 }
 
-.albunes{
-    border: 10px solid #222;
-    border-radius: 17px;
-    background: #222;
+.albunes {
+  border: 10px solid #222;
+  border-radius: 17px;
+  background: #222;
 }
 
-.lista, .artistas, .albunes{
-    cursor: pointer;
-    transition: color 0.3s;
+.lista,
+.artistas,
+.albunes {
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-.recientes{
-    cursor: pointer;
-    padding: 10px 20px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 15px;
+.recientes {
+  cursor: pointer;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.box{
+width: 820px;
+height: 720px;
+border-radius: 8px;
+background: linear-gradient(135deg, #570303, #181818);
+border: 1px solid #333;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover{
+  background: linear-gradient(135deg, #570303, #033a16);
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+.contenido-principal {
+  color: white;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.todo{
+  cursor: pointer;
+  font-weight: bold;
+  border: 10px solid #242424;
+  background-color: #242424;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.todo:hover{
+  background-color: rgb(43, 42, 42);
+  border-color: rgb(43, 42, 42);
+  transition: all 0.5s ease;
+}
+
+.musica{
+  cursor: pointer;
+  font-weight: bold;
+  border: 10px solid #242424;
+  background-color: #242424;
+  border-radius: 20px;
+}
+
+.podcast{
+  cursor: pointer;
+  font-weight: bold;
+  border: 10px solid #242424;
+  background-color: #242424;
+  border-radius: 20px;
+}
+
+.tu-musica{
+  font-weight: bold;
+  border: 10px solid #242424;
+  background-color: #242424;
+  border-radius: 20px;
 }
