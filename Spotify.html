@@ -13,7 +13,7 @@
       href="./img/spotify-icon.webp"
       type="image/x-icon"
     />
-    <title>Spotify</title>
+    <title>Spotify - Web Player</title>
   </head>
 
   <body>
@@ -24,7 +24,9 @@
       </div>
       <div class="inicio-busqueda">
         <div class="icono-inicio">
-          <span><i class="fa-solid fa-house"></i></span>
+          <a href="#">
+            <span><i class="fa-solid fa-house"></i></span>
+          </a>
         </div>
 
         <div class="search">
@@ -49,11 +51,13 @@
         </div>
 
         <div class="perfil">
-          <img
-            class="img-redonda"
-            src="./img/bugsbunny.jpg"
-            alt="Imagen de perfil"
-          />
+          <a href="http://127.0.0.1:3000/login.html">
+            <img
+              class="img-redonda"
+              src="./img/bugsbunny.jpg"
+              alt="Imagen de perfil"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -82,19 +86,233 @@
         <div class="recientes">
           <span>Recientes<i class="fa-solid fa-bars"></i></span>
         </div>
+        <!-- Musica lado izquierdo -->
+        <div>
+          <!-- Contenedor principal -->
+          <div class="playlist-container">
+            <!-- Lista individual -->
+            <div class="playlist-card">
+              <a
+                href="https://open.spotify.com/intl-es/artist/3AA28KZvwAUcZuOKwyblJQ"
+              >
+                <img
+                  src="./img/Spotify1.webp"
+                  alt="Miniatura"
+                  class="playlist-thumb"
+                />
+              </a>
+              <div class="playlist-info">
+                <h3 class="playlist-title">Canciones que te gustan</h3>
+                <p class="playlist-meta">Lista • 166 canciones</p>
+              </div>
+            </div>
+            <a href=""> </a>
+            <div class="playlist-card">
+              <a
+                href="https://open.spotify.com/playlist/37i9dQZF1E8Lukrjz8UoO0"
+              >
+                <img
+                  src="./img/Spotify2.webp"
+                  alt="Miniatura"
+                  class="playlist-thumb"
+                />
+              </a>
+              <div class="playlist-info">
+                <h3 class="playlist-title">Mi gusto</h3>
+                <p class="playlist-meta">Lista • Dani</p>
+              </div>
+            </div>
+
+            <div class="playlist-card">
+              <a
+                href="https://open.spotify.com/intl-es/artist/7B4hKK0S9QYnaoqa9OuwgX"
+              >
+                <img
+                  src="./img/Spotify3.webp"
+                  alt="Miniatura"
+                  class="playlist-thumb"
+                />
+              </a>
+              <div class="playlist-info">
+                <h3 class="playlist-title">mako</h3>
+                <p class="playlist-meta">Lista • Dani</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Contenido principal -->
       <div class="box">
+        <!-- Links Musica y podcast  -->
         <div class="contenido-principal">
-          <p class="todo">Todo</p>
-          <p class="musica">Música</p>
-          <p class="podcast">Pódcast</p>
+          <a href="">
+            <p class="todo">Todo</p>
+          </a>
+
+          <a href="">
+            <p class="musica">Música</p>
+          </a>
+
+          <a href="">
+            <p class="podcast">Pódcast</p>
+          </a>
+        </div>
+
+        <!-- Contenedor de la musica -->
+        <div class="texto-principal">
+          <p>Hecho para</p>
+          <h3>Dani</h3>
+        </div>
+        <div class="container-musica" style="display: flex; gap: 30px">
+          <div class="cartas">
+            <a
+              href="https://open.spotify.com/intl-es/album/27riPXr7ZTZcQmQkdOzce7"
+            >
+              <img src="./img/Blessd1.webp" class="cover" alt="Blessd" />
+            </a>
+            <div class="play-boton">▶</div>
+            <p class="texto">Trinidad Bendita - Blessd -</p>
+          </div>
+
+          <div class="album2">
+            <a
+              href="https://open.spotify.com/intl-es/album/27riPXr7ZTZcQmQkdOzce7"
+            >
+              <img
+                src="./img/ryancastro.jpg"
+                class="ryancastro"
+                alt="Ryan Castro"
+              />
+            </a>
+            <div class="buttom">▶</div>
+            <p class="text">Ryan Castro: BZRP Music Sessions, Vol. 51</p>
+          </div>
+
+          <div class="album3">
+            <a
+              href="https://open.spotify.com/intl-es/album/7obxopROLfWvdgoO6oWvZ8"
+            >
+              <img src="./img/Badbunny.jpg" class="badbunny" alt="Bad Bunny" />
+            </a>
+            <div class="buttom3">▶</div>
+            <p class="texto3">Bad Bunny - Un Verano Sin Ti -</p>
+          </div>
+
+          <div class="album4">
+            <a
+              href="https://open.spotify.com/intl-es/track/6lJNdg9MAxvyvcGQU4mg4L"
+            >
+              <img
+                src="./img/Alcolirykoz.jpg"
+                class="alcolirykoz"
+                alt="Alcolirykoz"
+              />
+            </a>
+            <div class="buttom4">▶</div>
+            <p class="texto4">Alcolirykoz - Aranjuez (Álbum Completo) -</p>
+          </div>
+        </div>
+
+        <!-- Contenedor principal Parte baja -->
+        <div class="tendencia">
+          <h2>Canciones en tendencia</h2>
+        </div>
+        <div
+          class="tendenciass"
+          style="display: flex; gap: 30px; margin-top: 40px"
+        >
+          <div class="westcol">
+            <a
+              href="https://open.spotify.com/intl-es/track/6lJNdg9MAxvyvcGQU4mg4L"
+            >
+              <img
+                src="./img/wsound.jpg"
+                class="wsound"
+                alt="La plena - W Sound"
+              />
+            </a>
+            <div class="botonn">▶</div>
+            <p class="plena">La Plena - W Sound 05 - Ovy On The Drums</p>
+          </div>
+
+          <div class="krisr">
+            <a href="https://open.spotify.com/playlist/37i9dQZF1E36FUIKzHbsI8">
+              <img
+                src="./img/Piponas.jpg"
+                class="lak"
+                alt="Las Piponas - Kris R"
+              />
+            </a>
+            <div class="play">▶</div>
+            <p class="piponas">Las Piponas - Kris R, Blessd -</p>
+          </div>
+
+          <div class="parche">
+            <a
+              href="https://open.spotify.com/intl-es/track/2ROj8GoI45RQouYomaLDTm"
+            >
+              <img src="./img/parcheTranqui.png" class="tranqui" alt="" />
+            </a>
+            <div class="boton10">▶</div>
+            <p class="tranquilos">Parche Tranqui lyrics - GeezyDee & Kris R</p>
+          </div>
+
+          <div class="ñengo-flow">
+            <a
+              href="https://open.spotify.com/intl-es/track/3BSjAFQkCYCjWR1sKXQO35"
+            >
+              <img src="./img/Alucinando.jpg" class="alucinando" alt="" />
+            </a>
+            <div class="boton11">▶</div>
+            <p class="alucina">Alucinando - Ñengo Flow -</p>
+          </div>
+        </div>
+
+        <!-- Pie de pagina -->
+        <div class="footer-section" style="padding-top: 50px">
+          <div class="footer">
+            <div class="footer-links">
+              <div class="footer-column">
+                <div>Empresa</div>
+                <ul class="col-links">
+                  <li><a href="#">Acerca de</a></li>
+                  <li><a href="#">Empleo</a></li>
+                  <li><a href="#">Ford the record</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <div>Comunidades</div>
+                <ul class="col-links">
+                  <li><a href="#">Para artistas</a></li>
+                  <li><a href="#">Desarrolladores</a></li>
+                  <li><a href="#">Publicidad</a></li>
+                  <li><a href="#">Inversores</a></li>
+                  <li><a href="#">Proveedores</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <div>Enlaces utiles</div>
+                <ul class="col-links">
+                  <li><a href="#">Asistencias</a></li>
+                  <li><a href="#">Apps gratis</a></li>
+                  <li><a href="#">Popular por pais</a></li>
+                  <li><a href="#">Import your music</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="Tu-musica">
-        <p>Tu musica</p>
-      </div>
     </div>
+
+    <div class="media"></div>
   </body>
 </html>
